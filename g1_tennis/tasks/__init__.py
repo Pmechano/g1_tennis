@@ -10,6 +10,7 @@
 ##
 
 from isaaclab_tasks.utils import import_packages
+from .. import g1_tennis_cfg as _g1_tennis_cfg  # noqa: F401  # ensure envs register on task import
 
 # The blacklist is used to prevent importing configs from sub-packages
 _BLACKLIST_PKGS = ["utils", ".mdp"]
