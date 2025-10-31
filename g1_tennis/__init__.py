@@ -8,6 +8,7 @@ Python module serving as a project/extension template.
 """
 
 # Register Gym environments.
+from . import g1_tennis_cfg as _g1_tennis_cfg  # noqa: F401  # side-effect: registers envs
 from .tasks import *
 
 # Register UI extensions.
