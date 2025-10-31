@@ -16,7 +16,6 @@ class G1TennisEnv(ManagerBasedRLEnv):
         self.hit_position = torch.zeros((cfg.scene.num_envs, 3), device=cfg.sim.device, dtype=torch.float32)
         self.hit_position_w = torch.zeros((cfg.scene.num_envs, 3), device=cfg.sim.device, dtype=torch.float32)
         self.target_intercept_time = torch.zeros((cfg.scene.num_envs, 1), device=cfg.sim.device, dtype=torch.float32)
-        self.episode_length_buf = torch.zeros(cfg.scene.num_envs, device=cfg.sim.device, dtype=torch.long)
         self.target_intercept_pos = torch.zeros((cfg.scene.num_envs, 3), device=cfg.sim.device, dtype=torch.float32)
 
         self.debug_mode = False

@@ -14,7 +14,7 @@ from . import agents
 gym.register(
     id="g1_tennis",
     # entry_point="isaaclab.envs:ManagerBasedRLEnv",
-    entry_point="g1_tennis.tasks.tennis.g1_tennis_env:G1TennisEnv",
+    entry_point="g1_tennis.tasks.manager_based.g1_tennis_cfg.g1_tennis_env:G1TennisEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": f"{__name__}.g1_tennis_cfg:G1TennisEnvCfg",
@@ -26,7 +26,7 @@ gym.register(
 gym.register(
     id="g1_tennis_play",
     # entry_point="isaaclab.envs:ManagerBasedRLEnv",
-    entry_point="g1_tennis.tasks.tennis.g1_tennis_env:G1TennisEnv",
+    entry_point="g1_tennis.tasks.manager_based.g1_tennis_cfg.g1_tennis_env:G1TennisEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": f"{__name__}.g1_tennis_cfg:G1TennisEnvCfg_PLAY",
